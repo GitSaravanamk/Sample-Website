@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Website | CI/CD Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sample Website</h1>
+    <p>Deployed automatically: GitHub &rarr; GitHub Actions &rarr; Docker Hub &rarr; Docker</p>
+    <h2>This program tested by SaravananG</h2>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Pipeline</h2>
+      <ol>
+        <li>Code is pushed to GitHub</li>
+        <li>GitHub Actions builds the Docker image</li>
+        <li>The image is pushed to Docker Hub</li>
+        <li>Docker runs the image and serves this page</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>This page is served from a container. Visitors receive only the
+         built website, not the repository or its history.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sample Website</p>
+  </footer>
+</body>
+</html>
